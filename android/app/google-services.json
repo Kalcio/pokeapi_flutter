@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175570952284",
+    "project_id": "pokeapi-flutter-app",
+    "storage_bucket": "pokeapi-flutter-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175570952284:android:588e63c698d62d3b1ac699",
+        "android_client_info": {
+          "package_name": "com.example.pokeapi_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175570952284-a67gk5n00eek2ohoi1rpbohg9nqosqo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgDZgYfduicAXEcHh9hHlytsgzEEmltiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175570952284-a67gk5n00eek2ohoi1rpbohg9nqosqo9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
