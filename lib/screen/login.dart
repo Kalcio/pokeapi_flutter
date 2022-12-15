@@ -36,6 +36,8 @@ class _LoginScreenState extends State<LoginScreen> {
             onPressed: () async {
               // Confirmación de Sign In
               await FirebaseService().signInWithGoogle();
+              if (!mounted) return;
+
               Navigator.push(
                   context,
                   // Ruta página Home

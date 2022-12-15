@@ -22,6 +22,7 @@ class _HomeScreenState extends State<HomeScreen> {
           onPressed: () async {
             // Confirmación de Logout
             await FirebaseService().signOut();
+            if (!mounted) return;
             Navigator.push(
                 context,
                 // Ruta Login
