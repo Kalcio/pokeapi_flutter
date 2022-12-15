@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
@@ -18,17 +19,24 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(),
       body: Center(
         // Botón de Logout
-        child: ElevatedButton(
-          onPressed: () async {
-            // Confirmación de Logout
-            await FirebaseService().signOut();
-            if (!mounted) return;
-            Navigator.push(
-                context,
-                // Ruta Login
-                MaterialPageRoute(builder: (context) => LoginScreen()));
-          },
-          child: Text("Logout"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // Mostrar el nombre en pantalla
+            Text("${FirebaseAuth.instance.currentUser!.displayName}"),
+            ElevatedButton(
+              onPressed: () async {
+                // Confirmación de Logout
+                await FirebaseService().signOut();
+                if (!mounted) return;
+                Navigator.push(
+                    context,
+                    // Ruta Login
+                    MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
+              child: Text("Logout"),
+            ),
+          ],
         ),
       ),
     );
