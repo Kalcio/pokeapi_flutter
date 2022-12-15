@@ -30,9 +30,12 @@ class _LoginScreenState extends State<LoginScreen> {
         child: Center(
             child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 40),
+          // Botón de Inicio de sesión
           child: ElevatedButton(
             onPressed: () {
-              Navigator.push(context,
+              Navigator.push(
+                  context,
+                  // Ruta página Home
                   MaterialPageRoute(builder: (context) => HomeScreen()));
             },
             style: ButtonStyle(
