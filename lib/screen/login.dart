@@ -26,6 +26,47 @@ class _LoginScreenState extends State<LoginScreen> {
                 // Dirección del gradiente
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter)),
+        child: Center(
+            child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 40),
+          child: ElevatedButton(
+            onPressed: () {},
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.resolveWith((states) {
+              if (states.contains(MaterialState.pressed)) {
+                return Colors.black26;
+              }
+              return Colors.white;
+            })),
+            // Botón de Login
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  // Configuración de la imagen de Google
+                  Image.asset(
+                    "assets/images/google.png",
+                    // Tamaño de la Imagen
+                    width: 40,
+                    height: 40,
+                  ),
+                  const SizedBox(
+                    width: 10,
+                  ),
+                  // Texto de Google
+                  const Text(
+                    "Ingresar con Google",
+                    style: TextStyle(
+                        color: Colors.black87,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        )),
       ),
     );
   }
