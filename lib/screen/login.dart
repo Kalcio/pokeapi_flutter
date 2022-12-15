@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:pokeapi_flutter/screen/home.dart';
+import 'package:pokeapi_flutter/services/firebase_services.dart';
 import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -32,7 +33,9 @@ class _LoginScreenState extends State<LoginScreen> {
           margin: const EdgeInsets.symmetric(horizontal: 40),
           // Botón de Inicio de sesión
           child: ElevatedButton(
-            onPressed: () {
+            onPressed: () async {
+              // Confirmación de Sign In
+              await FirebaseService().signInWithGoogle();
               Navigator.push(
                   context,
                   // Ruta página Home
