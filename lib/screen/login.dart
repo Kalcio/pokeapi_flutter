@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:pokeapi_flutter/screen/home.dart';
 import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -30,7 +31,10 @@ class _LoginScreenState extends State<LoginScreen> {
             child: Container(
           margin: const EdgeInsets.symmetric(horizontal: 40),
           child: ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => HomeScreen()));
+            },
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.resolveWith((states) {
               if (states.contains(MaterialState.pressed)) {
