@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 colors: [
               hexStringColor("0E8A57"),
               hexStringColor("E5EBED"),
-              hexStringColor("FFFFFF")
+              hexStringColor("FFFFFF"),
             ],
                 // Dirección del gradiente
                 begin: Alignment.topCenter,
@@ -50,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
             })),
             // Botón de Login
             child: Padding(
-              padding: const EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(5.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[

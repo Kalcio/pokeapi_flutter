@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pokeapi_flutter/screen/login.dart';
 import 'package:pokeapi_flutter/services/firebase_services.dart';
+import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -14,7 +15,11 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: hexStringColor("EF5350"),
+      ),
+      // Color de fondo
+      backgroundColor: hexStringColor("EFF1F0"),
       body: Center(
         // Botón de Logout
         child: Column(
@@ -33,6 +38,13 @@ class _HomeScreenState extends State<HomeScreen> {
                     MaterialPageRoute(
                         builder: (context) => const LoginScreen()));
               },
+              // Estilo del botón
+              style: ElevatedButton.styleFrom(
+                  // Color de fondo
+                  backgroundColor: hexStringColor("FECA1B"),
+                  // Color del texto
+                  foregroundColor: hexStringColor("325188")),
+              // Texto del botón
               child: const Text("Logout"),
             ),
           ],
