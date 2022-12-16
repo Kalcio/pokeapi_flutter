@@ -1,6 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
 import 'package:pokeapi_flutter/screen/login.dart';
 import 'package:pokeapi_flutter/services/firebase_services.dart';
@@ -32,9 +30,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 Navigator.push(
                     context,
                     // Ruta Login
-                    MaterialPageRoute(builder: (context) => LoginScreen()));
+                    MaterialPageRoute(
+                        builder: (context) => const LoginScreen()));
               },
-              child: Text("Logout"),
+              child: const Text("Logout"),
             ),
           ],
         ),
