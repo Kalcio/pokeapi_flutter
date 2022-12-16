@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pokeapi_flutter/screen/login.dart';
+import 'package:pokeapi_flutter/screen/widget/poke_card.dart';
 import 'package:pokeapi_flutter/services/firebase_services.dart';
 import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
@@ -23,8 +24,15 @@ class _HomeScreenState extends State<HomeScreen> {
       body: Center(
         // Botón de Logout
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          // mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            const PokeCard(
+                id: "1",
+                name: "charmander",
+                ability: "hierro",
+                sprites:
+                    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+                types: "fuego"),
             // Mostrar el nombre en pantalla
             Text("${FirebaseAuth.instance.currentUser!.displayName}"),
             ElevatedButton(
