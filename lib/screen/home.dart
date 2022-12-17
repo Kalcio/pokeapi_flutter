@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pokeapi_flutter/screen/votos.dart';
 import 'package:pokeapi_flutter/screen/inicio.dart';
 import 'package:pokeapi_flutter/screen/favoritos.dart';
+import 'package:pokeapi_flutter/screen/widget/menu.dart';
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
@@ -15,7 +16,7 @@ class _HomeScreenState extends State<Homescreen> {
   int _paginaActual = 0;
 
   final List<Widget> _paginas = [
-    const inicioScreen(),
+    // const inicioScreen(),
     const Favoritoscreen(),
     const Votoscreen(),
     const Favoritoscreen(),
@@ -59,6 +60,7 @@ class _HomeScreenState extends State<Homescreen> {
               backgroundColor: Color.fromARGB(255, 230, 11, 11))
         ],
       ),
+      drawer: const Menu(),
     );
   }
 }
