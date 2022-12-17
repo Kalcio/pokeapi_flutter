@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "175570952284",
-    "project_id": "pokeapi-flutter-app",
-    "storage_bucket": "pokeapi-flutter-app.appspot.com"
+    "project_number": "663062158197",
+    "project_id": "pokeapi-7cc0c",
+    "storage_bucket": "pokeapi-7cc0c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:175570952284:android:588e63c698d62d3b1ac699",
+        "mobilesdk_app_id": "1:663062158197:android:e407ccd22516d89b60113c",
         "android_client_info": {
           "package_name": "com.example.pokeapi_flutter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "175570952284-a67gk5n00eek2ohoi1rpbohg9nqosqo9.apps.googleusercontent.com",
+          "client_id": "663062158197-njsoo06ui5nrdro77flrevj7la4abppl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pokeapi_flutter",
+            "certificate_hash": "5b395857e035dca5ca66a57709d5acf5161fbe75"
+          }
+        },
+        {
+          "client_id": "663062158197-uvk0bvce6f48qcb9uo7ssdc433uegff6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDgDZgYfduicAXEcHh9hHlytsgzEEmltiU"
+          "current_key": "AIzaSyCX6Mznci5_w8jR5iJ7UQ3x-iFwLdHyOK0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "175570952284-a67gk5n00eek2ohoi1rpbohg9nqosqo9.apps.googleusercontent.com",
+              "client_id": "663062158197-uvk0bvce6f48qcb9uo7ssdc433uegff6.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
