@@ -15,15 +15,6 @@ class PokemonList extends ConsumerWidget {
       backgroundColor: Color.fromARGB(255, 255, 255, 255),
       body: CustomScrollView(
         slivers: [
-          // SliverAppBar(
-          //   backgroundColor: Color.fromARGB(255, 218, 12, 5),
-          //   title: Text(
-          //     "POKEDEX",
-          //     style: GoogleFonts.delaGothicOne(),
-          //   ),
-          //   centerTitle: true,
-          //   floating: true,
-          // ),
           pokemons.maybeWhen(
             data: (data) {
               return SliverPadding(

@@ -34,16 +34,16 @@ class Menu extends StatelessWidget {
               currentAccountPicture:
                   Image.network(FirebaseAuth.instance.currentUser!.photoURL!),
             ),
-            ListTile(
-              leading: const Icon(
-                Icons.search,
-              ),
-              title: const Text('Consultar Pokedex'),
-              onTap: () {
-                selectedItem(context, 0);
-                Navigator.pop(context);
-              },
-            ),
+            // ListTile(
+            //   leading: const Icon(
+            //     Icons.search,
+            //   ),
+            //   title: const Text('Consultar Pokedex'),
+            //   onTap: () {
+            //     selectedItem(context, 0);
+            //     Navigator.pop(context);
+            //   },
+            // ),
             ListTile(
               leading: const Icon(
                 Icons.logout,
