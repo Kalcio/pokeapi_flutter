@@ -14,8 +14,8 @@ flutter pub get
 Al estar conectado con Firebase es necesario generar un nuevo proyecto en Firebase console, además de ingresar las huellas digitales correspondientes.
 
 ## Integrantes
-- Dante C.
 - Felipe B.
+- Dante C.
 - Joaquín G.
 - Matías M.
 - Mauricio Q.
