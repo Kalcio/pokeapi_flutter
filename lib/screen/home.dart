@@ -38,26 +38,26 @@ class _HomeScreenState extends State<Homescreen> {
         items: const [
           BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: "Home",
+              label: "Pokedex",
               backgroundColor: Color.fromARGB(255, 230, 11, 11)),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.topic,
               ),
-              label: "Pokedex",
+              label: "Votos",
               backgroundColor: Color.fromARGB(255, 230, 11, 11)),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.poll,
               ),
-              label: "Votos",
-              backgroundColor: Color.fromARGB(255, 230, 11, 11)),
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.star_rate,
-              ),
               label: "Favoritos",
-              backgroundColor: Color.fromARGB(255, 230, 11, 11))
+              backgroundColor: Color.fromARGB(255, 230, 11, 11)),
+          // BottomNavigationBarItem(
+          //     icon: Icon(
+          //       Icons.star_rate,
+          //     ),
+          //     label: "Favoritos",
+          //     backgroundColor: Color.fromARGB(255, 230, 11, 11))
         ],
       ),
       drawer: const Menu(),
