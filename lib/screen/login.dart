@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/src/widgets/container.dart';
+import 'package:flutter/src/widgets/framework.dart';
 import 'package:pokeapi_flutter/screen/home.dart';
+import 'package:pokeapi_flutter/screen/inicio.dart';
 import 'package:pokeapi_flutter/services/firebase_services.dart';
 import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
@@ -19,9 +22,9 @@ class _LoginScreenState extends State<LoginScreen> {
             gradient: LinearGradient(
                 //Colores de la pantalla
                 colors: [
-              hexStringColor("0E8A57"),
-              hexStringColor("E5EBED"),
-              hexStringColor("FFFFFF"),
+              hexStringColor("E03128"),
+              hexStringColor("E3706A"),
+              hexStringColor("E49793")
             ],
                 // Dirección del gradiente
                 begin: Alignment.topCenter,
@@ -39,18 +42,18 @@ class _LoginScreenState extends State<LoginScreen> {
               Navigator.push(
                   context,
                   // Ruta página Home
-                  MaterialPageRoute(builder: (context) => const HomeScreen()));
+                  MaterialPageRoute(builder: (context) => const Homescreen()));
             },
             style: ButtonStyle(
                 backgroundColor: MaterialStateProperty.resolveWith((states) {
               if (states.contains(MaterialState.pressed)) {
                 return Colors.black26;
               }
-              return Colors.white;
+              return Color.fromARGB(255, 255, 255, 255);
             })),
             // Botón de Login
             child: Padding(
-              padding: const EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(8.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
