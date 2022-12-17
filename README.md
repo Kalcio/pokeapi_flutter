@@ -1,16 +1,21 @@
-# pokeapi_flutter
+# Taller 3 - PokeAPI Flutter  - Computación Paralela y Distribuida
 
-A new Flutter project.
+## Descripción del Código 
 
-## Getting Started
+El siguiente código consta de una aplicación móvil que consulta la PokeAPI, mostrando en pantalla un listado con todos los Pokémon. La aplicación tiene implementado
+Firebase Auth, siendo necesario una cuenta de Google para ingresar a la APP.
 
-This project is a starting point for a Flutter application.
+## Instrucciones de ejecución
+Es necesario tener instalado Flutter.
+Al abrir por primera vez el proyecto es necesario ingresar el siguiente comando:
+```
+flutter pub get
+```
+Al estar conectado con Firebase es necesario generar un nuevo proyecto en Firebase console, además de ingresar las huellas digitales correspondientes.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Integrantes
+- Dante C.
+- Felipe B.
+- Joaquín G.
+- Matías M.
+- Mauricio Q.
