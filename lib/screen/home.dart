@@ -1,56 +1,63 @@
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:pokeapi_flutter/screen/login.dart';
 import 'package:pokeapi_flutter/screen/votos.dart';
-import 'package:pokeapi_flutter/services/firebase_services.dart';
 import 'package:pokeapi_flutter/screen/inicio.dart';
-import 'package:pokeapi_flutter/screen/pokedex.dart';
 import 'package:pokeapi_flutter/screen/favoritos.dart';
-
 
 class Homescreen extends StatefulWidget {
   const Homescreen({super.key});
 
   @override
   // ignore: library_private_types_in_public_api
-  _HomeScreenState createState() => _HomeScreenState ();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-
-
 class _HomeScreenState extends State<Homescreen> {
-int _paginaActual = 0;
+  int _paginaActual = 0;
 
-final List<Widget> _paginas = [
-  inicioScreen(),
-  Favoritoscreen(),
-  Votoscreen(),
-  Favoritoscreen(),
-
-];
+  final List<Widget> _paginas = [
+    const inicioScreen(),
+    const Favoritoscreen(),
+    const Votoscreen(),
+    const Favoritoscreen(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(backgroundColor: const Color.fromARGB(255, 190, 50, 7)),
-      body: 
-        _paginas[_paginaActual],
+      body: _paginas[_paginaActual],
       bottomNavigationBar: BottomNavigationBar(
         backgroundColor: const Color.fromARGB(255, 190, 50, 7),
-        onTap: (index){
+        onTap: (index) {
           setState(() {
             _paginaActual = index;
           });
         },
         currentIndex: _paginaActual,
-        items:  [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home", backgroundColor:Color.fromARGB(255, 230, 11, 11) ),
-          BottomNavigationBarItem(icon: Icon(Icons.topic, ), label: "Pokedex", backgroundColor:Color.fromARGB(255, 230, 11, 11)),
-          BottomNavigationBarItem(icon: Icon(Icons.poll, ), label: "Votos", backgroundColor:Color.fromARGB(255, 230, 11, 11)),
-          BottomNavigationBarItem(icon: Icon(Icons.star_rate, ), label: "Favoritos", backgroundColor:Color.fromARGB(255, 230, 11, 11))
-        ],   
+        items: const [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home",
+              backgroundColor: Color.fromARGB(255, 230, 11, 11)),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.topic,
+              ),
+              label: "Pokedex",
+              backgroundColor: Color.fromARGB(255, 230, 11, 11)),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.poll,
+              ),
+              label: "Votos",
+              backgroundColor: Color.fromARGB(255, 230, 11, 11)),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.star_rate,
+              ),
+              label: "Favoritos",
+              backgroundColor: Color.fromARGB(255, 230, 11, 11))
+        ],
       ),
     );
   }
