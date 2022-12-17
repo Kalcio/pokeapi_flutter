@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokeapi_flutter/screen/pokedex.dart';
 import 'package:pokeapi_flutter/screen/votos.dart';
 import 'package:pokeapi_flutter/screen/inicio.dart';
 import 'package:pokeapi_flutter/screen/favoritos.dart';
@@ -17,7 +18,7 @@ class _HomeScreenState extends State<Homescreen> {
 
   final List<Widget> _paginas = [
     // const inicioScreen(),
-    const Favoritoscreen(),
+    const Pokedexscreen(),
     const Votoscreen(),
     const Favoritoscreen(),
   ];

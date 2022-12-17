@@ -8,10 +8,8 @@ class Favoritoscreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        PokemonList(),
-      ],
+    return const Center(
+      child: Text("Favoritos", style: TextStyle(fontSize: 30)),
     );
   }
 }

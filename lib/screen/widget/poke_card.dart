@@ -43,7 +43,7 @@ class PokeCard extends StatelessWidget {
       child: Stack(
         children: [
           Align(
-            alignment: Alignment(-0.95, -0.9),
+            alignment: const Alignment(-0.95, -0.9),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(

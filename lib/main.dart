@@ -12,7 +12,7 @@ void main() async {
   await Firebase.initializeApp();
 
   runApp(
-    ProviderScope(
+    const ProviderScope(
       child: MyApp(),
     ),
   );

@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:pokeapi_flutter/screen/home.dart';
-import 'package:pokeapi_flutter/screen/inicio.dart';
 import 'package:pokeapi_flutter/services/firebase_services.dart';
 import 'package:pokeapi_flutter/utils/colors_utils.dart';
 
@@ -49,7 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
               if (states.contains(MaterialState.pressed)) {
                 return Colors.black26;
               }
-              return Color.fromARGB(255, 255, 255, 255);
+              return const Color.fromARGB(255, 255, 255, 255);
             })),
             // Botón de Login
             child: Padding(
